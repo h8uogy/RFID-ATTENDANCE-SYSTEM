@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar__container">
+      <div id="navbar__logo">RFID ATTENDANCE SYSTEM</div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="dashboard">
+
+    <div class="dashboard-header">
+      <h1>Student Dashboard</h1>
+      <p><strong>Name:</strong> <span id="studentName">—</span></p>
+      <p><strong>Section:</strong> <span id="studentSection">—</span></p>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Attendance records will go here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+      <div class="circle present-circle">
+        <span>0</span>
+        Present
+      </div>
+
+      <div class="circle late-circle">
+        <span>0</span>
+        Late
+      </div>
+
+      <div class="circle absent-circle">
+        <span>0</span>
+        Absent
+      </div>
+    </div>
+
+  </div>
+
+  <script src="studentDashboard.js"></script>
+</body>
+</html>
+

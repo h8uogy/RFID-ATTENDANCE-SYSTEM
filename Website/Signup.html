@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="navbar__container">
+    <div id="navbar__logo">RFID ATTENDANCE SYSTEM</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <div class="login-container">
+
+    <h1>Sign Up</h1>
+
+    <form id="signupForm">
+
+      <!-- ROLE -->
+      <div class="input-box">
+        <select id="role" required>
+          <option value="">Select Status</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+      </div>
+
+      <!-- STUDENT -->
+      <div id="studentFields" style="display:none;">
+
+        <h3>Student Information</h3>
+
+        <div class="input-box">
+          <input type="text" id="studentName" placeholder="Student Name" required>
+        </div>
+
+        <div class="input-box">
+          <select id="studentSection" required>
+            <option value="">Select Section</option>
+            <option value="Edison">Edison</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Sy">Sy</option>
+            <option value="Co">Co</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="email" id="parentEmail" placeholder="Parent Email" required>
+        </div>
+
+      </div>
+
+      <!-- TEACHER -->
+      <div id="teacherFields" style="display:none;">
+
+        <h3>Teacher Information</h3>
+
+        <div class="input-box">
+          <input type="text" id="teacherName" placeholder="Teacher Name" required>
+        </div>
+
+        <div class="input-box">
+          <select id="teacherSection" required>
+            <option value="">Select Section</option>
+            <option value="Edison">Edison</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Sy">Sy</option>
+            <option value="Co">Co</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="email" id="teacherEmail" placeholder="Teacher Email" required>
+        </div>
+
+        <div class="input-box">
+          <input type="text" id="teacherCode" placeholder="Teacher Code">
+        </div>
+
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+    </form>
+
+  </div>
+</div>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

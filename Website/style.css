@@ -1,0 +1,225 @@
+body { 
+  margin: 0; 
+  font-family: Arial, sans-serif;  
+  background-size: cover; 
+  background-position: center;
+} 
+
+.navbar {
+  background: #0D6EFD;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar__container {
+justify-content: space-between;
+height: 80px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#navbar__logo {
+  color: #FFFFFF;
+  background-size: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-content {
+  min-height: calc(100vh - 80px);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.login-container { 
+  background-color: white; 
+  width: 320px; 
+  padding: 30px; 
+  border-radius: 10px; 
+  text-align: center; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  align-items: center;
+} 
+.login-container h1 { 
+  margin-bottom: 20px; } 
+  .input-box 
+{ 
+display: flex; 
+align-items: center; 
+border: 1px transparent; 
+padding: 10px; 
+border-radius: 6px; 
+margin-bottom: 15px; 
+font-weight: 2; 
+} 
+.input-box span { 
+margin-right: 8px; 
+font-size: 18px; 
+} 
+.input-box input, 
+.input-box select 
+{ background: transparent; 
+  border: none; 
+  outline: none; 
+  width: 100%; 
+  font-size: 14px; 
+  color: black; 
+} 
+button { 
+  width: 100%; 
+  padding: 10px; 
+  border: none; 
+  border-radius: 40px; 
+  background: #007bff; 
+  color: black; 
+  font-size: 16px; 
+  cursor: pointer; 
+} 
+button:hover { 
+  background: blue; 
+} 
+.signup-text { 
+  margin-top: 15px; 
+  font-size: 14px; 
+} 
+.signup-text a { 
+  color: #007bff; 
+  text-decoration: none; 
+}
+
+/* T DB */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.dashboard-header {
+  margin-bottom: 15px;
+}
+
+/* Table Container */
+.table-container {
+  background: white;
+  border-radius: 10px;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+#attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#attendanceTable thead {
+  background: #0D6EFD;
+  color: white;
+}
+
+#attendanceTable th,
+#attendanceTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+/* STATUS COLORS */
+.present {
+  color: #16A34A;
+  font-weight: bold;
+}
+
+.late {
+  color: #F59E0B;
+  font-weight: bold;
+}
+
+.absent {
+  color: #DC2626;
+  font-weight: bold;
+}
+
+/* DROPDOWN BUTTON */
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* HISTORY ROW */
+.history-row {
+  display: none;
+  background: #F9FAFB;
+}
+
+.history {
+  padding: 10px;
+  text-align: left;
+}
+
+/* SUMMARY SECTION */
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* SUMMARY CIRCLES */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.circle span {
+  font-size: 22px;
+}
+
+/* COLOR CODING */
+.present-circle {
+  background: #16A34A;
+}
+
+.late-circle {
+  background: #F59E0B;
+}
+
+.absent-circle {
+  background: #DC2626;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+}

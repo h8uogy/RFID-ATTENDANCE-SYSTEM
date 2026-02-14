@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div id="navbar__logo">RFID ATTENDANCE SYSTEM</div>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="login-container">
+      <h1>Login</h1>
+
+      <form id="loginForm">
+
+        <!-- Name -->
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="input-box">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+
+        <!-- Section -->
+        <div class="input-box">
+          <select id="section" required>
+            <option value="">Select Section</option>
+            <option value="Edison">Edison</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Sy">Sy</option>
+            <option value="Co">Co</option>
+          </select>
+        </div>
+
+        <!-- Role -->
+        <div class="input-box">
+          <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </div>
+
+        <!-- TEACHER CODE -->
+        <div class="input-box" id="teacherCodeBox" style="display:none;">
+          <input type="text" id="teacherCode" placeholder="Enter Teacher Code">
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="signup-text">
+        Don't have an account?
+        <a href="Signup.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
